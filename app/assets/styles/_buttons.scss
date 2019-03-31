@@ -1,0 +1,69 @@
+// BUTTONS
+
+// GLOBAL
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  transform: translate(0);
+}
+
+.bttn {
+  display: inline-block;
+  font-family: $base-font-family;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: $global-radius;
+  border: 0;
+  background-image: none;
+  user-select: none;
+
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 1.5rem;
+  min-height: 2rem;
+  min-width: 2rem;
+
+  text-shadow: none;
+  opacity: 1;
+
+  &:active {
+    outline: none;
+    transform: translate(1px 0);
+  }
+  &:hover {
+    opacity: 0.88;
+  }
+  &.disabled, &[disabled] {
+    @extend .disabled;
+  }
+  &.hide-txt {
+    &:before {
+      margin-right: 0;
+    } 
+    &:after {
+      margin-left: 0;
+    } 
+    > * {
+      @extend .visually-hidden;
+    }
+  }
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+
+// COLOR VARIATIONS
+
+// Default
+.bttn,
+.bttn:hover,
+.bttn:visited {
+  @include bttn-variation($base-color);
+  color: #fff;
+  @extend .antialiased;
+}

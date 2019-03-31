@@ -1,0 +1,13 @@
+/* TEAM */
+Developer: Shoyeb Inamdar
+Site: http://shoyebinamdar.github.com
+Location: Pune, India
+
+/* THANKS */
+Name: Daniel da Silva - http://danielfdsilva.com
+
+/* SITE */
+Last update: 2017/09/19
+Standards: HTML5, CSS3
+Software: Sublime Text 3, Adobe Illustrator CC, Adobe Photoshop CC, Iconmoon, Compass, Gulp
+Version: 1.2.0
